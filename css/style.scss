@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// #ovr-header{
+//     background-color: repeating-linear-gradient(45deg, black, blue, yellow );
+// }
+
+.main-menu{
+    background: rgb(12, 20, 31);
+}
+.main-menu #menu-nav .main-over .main-ul li .active{
+    color: rgb(17, 146, 211); 
+}
+.main-menu #menu-nav .main-over .main-ul li a{
+    background:rgb(12, 20, 31);
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.main-menu #menu-nav .main-over .main-ul li a:hover{
+    color: rgb(17, 146, 211);
+}
+
+.main-menu{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: rgb(12, 20, 31);
+    opacity: .8;
+}
+
+
+// banner style
+.main-head{
+    background: rgb(12, 20, 31);
+    background-image: repeating-linear-gradient(45deg, rgb(12, 20, 31), rgb(10, 10, 24), rgb(7, 10, 22));
+    color: white;
+    color: white;
+    height: 30rem;
+    // clip-path: polygon(0 0, 100% 0%, 100% 76%, 0 89%);
+    font-weight: 100;
+    width: 100%;
+    position: absolute;
+}

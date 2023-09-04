@@ -19,6 +19,15 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+
+  const WEBHOOK_SECRET = 'c8c9a78ecfaf0583cf725aa1a2af5c4b60f20d2dc3261a1568a2a439cdc83853b6aca58b0e74d95f5a061580a55cde19';
+function verifySignature ($body, $signature) {
+    $digest = hash_hmac('sha1', $body, WEBHOOK_SECRET);
+    return $signature === $digest ;
+}
+if (!verifySignature(file_get_contents('php://input'), $_SERVER['HTTP_X_TAWK_SIGNATURE'])) {
+    // verification failed
+}
 </script>
 <!--End of Tawk.to Script-->
   
